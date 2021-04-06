@@ -66,4 +66,15 @@ var details = students.map((detailsStd) => {
 });
 
 
-console.log(details);
+// console.log(details);
+const studentsList =  students.map((student) => {
+    if(student.college == 'ismt'){
+        return{
+            ...student,
+            number: student.number/ 2
+        }
+    }
+    return student;
+})
+
+console.log(studentsList);
